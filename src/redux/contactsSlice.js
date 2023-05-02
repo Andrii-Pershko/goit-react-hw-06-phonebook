@@ -1,8 +1,10 @@
 import { createSlice, nanoid } from '@reduxjs/toolkit';
 import contactsList from 'backEnd_imitation/contacts';
 
+// ініцілюємо стартові контакти
 const contactInitialState = [...contactsList];
 
+// створюємо slice для списку контактів
 const contactSlice = createSlice({
   name: 'contacts',
   initialState: contactInitialState,
